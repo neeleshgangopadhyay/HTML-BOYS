@@ -1,0 +1,86 @@
+body{
+background:url(fun.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+
+
+.simple{
+
+ text-align:center;
+ margin:100px 400px;
+
+
+
+}
+#registration{
+
+  width: 80%;
+   background-color:#051019;
+   opacity:0.8;
+   padding: 80px 60px;
+}
+#button{
+width:250px;
+
+padding:10px;
+border-radius: 5px;
+outline:0px;
+
+
+
+}
+#butto{
+width:250px;
+
+padding:10px;
+border-radius: 5px;
+outline:0px;
+
+
+
+}
+#pass{
+width:250px;
+
+padding:10px;
+border-radius: 5px;
+outline:0px;
+
+
+
+}
+#ph{
+ width:50px;
+outline:0px;
+padding:10px;
+border-radius: 5px;
+
+
+}
+#phone
+{width:200px;
+outline:0px;
+padding:10px;
+border-radius: 5px;
+}
+#but{
+color:white;
+font-size:18px;
+}
+#butt{
+
+
+width:250px;
+
+padding:10px;
+border-radius: 5px;
+outline:0px;
+background-color:green;
+border:2px solid #01010c;
+color:white;
+font-size:18px;
+
+
+}

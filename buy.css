@@ -1,0 +1,131 @@
+@import"https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+
+*{
+	margin:0;
+	padding: 0;
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+
+body{
+	height: 100vh;
+	background-image: linear-gradient(grey,lightgrey,grey);
+}
+
+nav {
+ height: 12vh;
+ width: auto;
+ background-color: rgba(0,0,0,0.5);
+ box-shadow: 0 0 10px black;
+ border-bottom: 1px solid black;
+}
+
+.profile{
+	height: 60px;
+	width: 60px;
+	margin: 10px;
+	float: right;
+	margin: 16px;
+	margin-right: 65px;
+	cursor: pointer;
+}
+
+.profile img{
+	height: 60px;
+	width: 60px;
+	color: #fff;
+}
+
+.buy{
+	height: 60px;
+	width: 120px;
+	position: absolute;
+	top: 16px;
+	left: 300px;
+	text-align: center;
+	line-height: 60px;
+}
+
+h1{
+	color: #54aeee;
+	font-size: 40px;
+	letter-spacing: 3px;
+}
+
+.box{
+	margin-top: 8px; 
+	height: 120px;
+	width: 180px;
+	background-color: rgba(0,0,0,0.6);
+	color: white;
+	box-shadow: 0 0 8px black;
+	position: absolute;
+	right: 4px;
+	top:-20vh;
+	transition: 0.6s ease;
+
+}
+
+.box div{
+	height: 52px;
+	width: 94%;
+	margin: 4px 3%;
+	text-align: center;
+	line-height: 52px;
+	box-shadow: inset 0 0 10px black;
+	cursor: pointer;
+}
+
+.box div:hover{
+	box-shadow: 0 0 10px black;
+}
+
+span{
+	color: #fff;
+	font-weight: 600;
+}
+
+.box_active{
+	position: absolute;
+	top: 12.5vh;
+}
+
+.search{
+	width: 460px;
+	background-color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	border-radius: 5px;
+	box-shadow: 0 0 6px black;
+	transition: 0.6s ease;
+	cursor: pointer;
+}
+
+.search input{
+	padding-left: 8px;
+	margin: 7px 0 7px 7px;
+	height: 30px;
+	width: 410px;
+	border-radius: 5px;
+	border:none;
+}
+
+.search_new{
+	position: absolute;
+	top: 17vh;
+}
+
+.icon{
+	border-radius: 50%;
+	margin: 7px ;
+	height: 30px;
+	width: 30px;
+	background-color: #54aeee;
+}
+
+.icon i{
+	padding: 6.5px;
+}

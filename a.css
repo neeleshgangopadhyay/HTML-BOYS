@@ -1,0 +1,13 @@
+@import"https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+
+*{
+	margin:0;
+	padding: 0;
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+
+body{
+	height: 100vh;
+	background-image: linear-gradient();
+}

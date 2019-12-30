@@ -1,0 +1,141 @@
+<!Doctype html>
+<html>
+<head>
+
+<title>REGISTRATION FORM</title>
+<link rel="stylesheet" href="simple-form.css" type="text/css">
+
+
+<script>
+</script>
+</head>
+
+<body>
+<h1><font color="GREEN" size="25">MORINGA OLEIFERRA</font></h1>
+<div class="simple">
+<h2><font color="red"> REGISTRATION FORM</font></h2>
+    <form name="RegForm" action="a.html" onsubmit="return validation()" method="post"  id="registration">
+      <input type="text" required="" pattern="[A-Za-z]"pattern="[A-Za-z]" title="Enter only text and also must contain min of 1 and max of 20"  name="fname" id="button" class="form-control" placeholder="Enter your  name ">
+	  <br>
+      <span id="name">  </span>
+	  <br>
+      <input type="text" name="Username" required="2" maxlength="20" id="butto" class="form-control" placeholder="Enter your  username "><br>
+   
+      <br>
+	  <span id="username">  </span>
+	  <br>
+        <input type="password" required="5" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Please input a number and a capital character " name="password" id="pass" placeholder="Enter your password ">
+		<br>
+     <span id="passwords"></span>
+      <br>
+      <select><option>+91</option><option>+92</option><option>+93</option><option>+94</option><option><option>+95</option></select>
+       <input type="number"  required="10" maxlength="10" name="number" placeholder="enter your phonenumber" id="phone"><br>
+      <span id="mnumber"></span>
+	   
+       <br>
+	   <span id="name"></span>
+       <input type="submit" value="register" id="butt">
+     </form>
+ <p><font color="red">If already a member,</font><a href="login.html">CLICK HERE</a></p>
+</div>
+
+
+
+
+<script type="text/javascript">
+   function validation(){
+
+       var user=document.getElementById('button').value;
+       var usern=document.getElementById('butto').value;
+       var pass=document.getElementById('pass').value;
+       var mnumber=document.getElementById('phone').value;
+
+
+
+
+
+
+
+
+
+       if(user=="")
+       {
+         document.getElementById('name').innerHTML="Please fill the Name fields";
+         return false;
+
+       }
+        else if(user.length<=2)||(user.length>20)
+       {
+       document.getElementById('name').innerHTML="Name Length To be between 2 and 20";
+	            return false;
+
+       }
+       else if(!isNaN(user))
+       {
+        document.getElementById('name').innerHTML="Name cannot be only number";
+	            return false;
+
+
+       }
+
+
+
+
+       if(usern=="")
+	          {
+	            document.getElementById('username').innerHTML="Please fill the username fields";
+	            return false;
+
+              }
+      else if((usern.length<=2)||(usern.length>20))
+	          {
+	          document.getElementById('username').innerHTML="UserName Length To be between 2 and 20";
+	   	            return false;
+
+
+	          }
+	    else if(!isNaN(user))
+	          {
+	           document.getElementById('username').innerHTML="UserName cannot be only number";
+	   	            return false;
+
+
+               }
+
+       if(pass=="")
+	          {
+	            document.getElementById('passwords').innerHTML="Please fill the password fields";
+	            return false;
+
+       }
+       else if((pass.length<=5)||(pass.length>20))
+	          {
+	          document.getElementById('passwords').innerHTML="password length To be between 2 and 20";
+	   	            return false;
+
+
+       }
+       else if(mnumber=="")
+	          {
+	            document.getElementById('mobilenumber').innerHTML="Please fill the mobileno fields";
+	            return false;
+
+       }
+       else if(NaN(mnumber))
+       {
+
+          document.getElementById('mobilenumber').innerHTML="User must write digit only";
+	            return false;
+
+       }
+        else if(mnumber.length!=10)
+       {
+           document.getElementById('mobilenumber').innerHTML="User must enter 10 digit mobile number";
+	            return false;
+
+
+       }
+      }
+</script>
+</body>
+</html>

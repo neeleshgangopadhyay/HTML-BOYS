@@ -1,0 +1,117 @@
+body
+{
+   margin:0;
+   padding:0;
+  background:url(tu1.jpg);
+   background-size: cover;
+   font-family: sans-serif;
+}
+  .title
+  {
+
+    text-align:center;
+    padding:50px 0 20px;
+
+
+
+   }
+ .title h1
+   {
+
+     margin:0;
+     padding:0;
+     color:#262626;
+     text-transform:uppercase;
+     font-size: 36px;
+  }
+ .container
+  {  width:50%;
+     height:400px;
+     background:#fff;
+     margin:0 auto;
+     border:2px solid #fff
+     box-shadow:0 15px 40px  rgba(0,0,0,0.5);
+     
+   }
+ .container .left
+  {
+    float:left;
+    width:50%;
+    height:400px;
+    background:url(tu2.jpg);
+    background-size:cover;
+    box-sizing:border-box;
+  }
+  .container .right
+  {
+    float:right;
+    width:50%;
+    height: 400px;
+    box-sizing:border-box;
+   }
+  .formBox
+   { 
+      width:150px;
+      padding:80px 40px
+      box-sizing:border-box;
+      height:400px;
+      background:#fff;
+      } 
+    .formbox p
+   {
+     margin:0;
+     padding:30px;
+     fontweight: bold;
+     color:#a6af13;
+     
+  }
+    .formBox input
+    { padding:20;
+      width:300%;
+      margin-bottom:20px;
+    }
+   
+
+   .formbox input[type="text"],
+   .formbox input[type="Password"]
+     {  padding:20;
+        border:none;
+        border-bottom:2px solid #a6af13;
+        outline:none;
+        height: 40px;
+        
+  
+ 
+
+     }
+   .formbox input[type="text"]:focus,
+   .formbox input[type="Password"]:focus
+     {
+        padding:20;       
+        border-bottom:2px solid #262626;
+      
+     }
+   .formbox input[type="submit"]
+    {
+
+
+       border:none;
+       outline:none;
+       height: 40px;
+       color:#fff; 
+       background:#262626;
+       cursor:pointer;
+     }
+    .formbox input[type="submit"]:hover
+     {
+        background:#a6af13;
+        
+     } 
+     .formbox a
+     { padding:20px;
+       color:#262626;
+       font-size:12px;
+       font-weight: bold;
+         
+ }
+

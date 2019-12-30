@@ -1,0 +1,117 @@
+<! doctype html>
+<html>
+    <head>
+     <meta charset="utf-8">
+     <script>
+
+	 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <title>Login Form</title>
+      <link rel="stylesheet" href="style.css">
+     </head>
+ <body>
+      <div class="title"><h1>SIGN IN FORM</h1></div>
+       <div class="container">
+          <div class="left"></div>
+            <div class="right">
+                <div class="formbox">
+                      <form name="RegForm" action="a.html" onsubmit="return validation()" method="post">
+                          <p>   Username</p>
+                          <input type="text" name="Username" required="2" maxlength="20" placeholder="Online" id="user">
+                           <p>   Password</p><br>
+                           <span id="Username"></span>
+                           <br>
+                          <input type="Password" required="5" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Please input a number and a capital character "  name="Password" placeholder"<<<<<<" user="pass">
+                           <input type="submit" name="" value="Sign in">
+                           <a href="#">Forget Password</a>
+                     </form>
+
+                 </div>
+            </div>
+       </div>
+  <script>
+     function validation()
+     {
+
+         var user=document.getElementById('button').value;
+         var pass=document.getElementById('pass').value;
+
+
+
+
+
+
+
+       if(user=="")
+       {
+         document.getElementById('Username').innerHTML="Please fill the Name fields";
+         return false;
+
+       }
+       if(user.length<=2)||(user.length>20)
+       {
+       document.getElementById('Username').innerHTML="Name Length To be between 2 and 20";
+	            return false;
+
+
+       }
+       if(!isNaN(user))
+       {
+        document.getElementById('Username').innerHTML="Name cannot be only number";
+	            return false;
+
+
+       }
+       if(pass=="")
+	   	          {
+	   	            document.getElementById('passwords').innerHTML="Please fill the password fields";
+	   	            return false;
+
+	          }
+	          if(pass.length<=5)||(pass.length>20)
+	   	          {
+	   	          document.getElementById('passwords').innerHTML="password length To be between 2 and 20";
+	   	   	            return false;
+
+
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+     }
+
+
+
+
+  </script>
+
+
+  </body>
+</html>

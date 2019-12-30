@@ -1,0 +1,50 @@
+<html>
+<head>
+<div id="data"></div>
+<script language="Javascript">
+fuction processForm()
+{
+var parameters=location.search.substring(1).split("&");
+var temp=parameters[0].split("m");
+l=unescape(temp[1]);
+document.getElementById("data").innerHTML=l;
+}
+processForm();
+</script>
+
+
+
+
+
+
+<style>
+body{
+	height: 100vh;
+	background-image: linear-gradient(lightyellow,lightyellow,lightyellow);
+}
+.block {
+  display: block;
+  height: 10%%;
+  width: 10%;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translateX(-50%);
+  background-color:#00001a;
+  color: white;
+  padding: 10px 28px;
+  font-size: 10px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 0 4px #000;
+}
+</style>
+<title>Message</title>
+</head>
+<body>
+<h3 align="center"><br><br><br><br><br><br><br><br><br><br>ALERT!</h4>
+<h4 align="center">YOUR ORDER IS PLACED .PLEASE PAY ON DELIVERY</h4>
+<a href="BUYPLANT.html"><button class="block">CONTINUE SHOPPING</button></a>
+</body>
+</html>

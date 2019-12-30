@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script>
+     $(document).ready(function(){
+       $("#hide").click(function(){
+         $("dd").hide();
+       });
+       $("#show").click(function(){
+         $("dd").show();
+       });
+     });
+   </script>
+   <script>
+   $(document).ready(function(){
+     $("button").click(function(){
+       $("img").animate({
+         left: '250px',
+         height: '+=150px',
+         width: '+=150px'
+       });
+     });
+   });
+</script>
+   <title>PLANT DESCRIPTION</title>
+
+
+
+<style type="text/css" media="screen">
+
+body{
+	height: 100vh;
+	background-image: linear-gradient(grey,lightgrey,grey);
+}
+ .simple{
+
+     text-align:center;
+     margin:100px 400px;
+
+
+
+    }
+#button{
+width:250px;
+
+padding:10px;
+border-radius: 5px;
+outline:0px;
+
+
+
+}
+#butt{
+
+
+width:250px;
+
+padding:10px;
+border-radius: 5px;
+outline:0px;
+background-color:green;
+border:2px solid #01010c;
+color:white;
+font-size:18px;
+
+
+}
+       dt{margin-bottom:.5em;font-size:125%;}
+      dd{margin-bottom:1em;}
+    </style>
+</head>
+<body>
+<h1 align="center"><font color="red" >PLANT DESCRIPTION</font></h1>
+<dl id="faq">
+         <dt><font color="red">SCIENTIFIC NAME OF PLANT?</font></dt>
+         <dd>Hibiscus</dd>
+         <dt><font color="red">DESCRIPTION</font></dt>
+         <dd>Hibiscus is a genus of flowering plants in the mallow family, Malvaceae. The genus is quite large, comprising several hundred species that are native to warm temperate, subtropical and tropical regions throughout the world. Member species are renowned for their large, showy flowers and those species are commonly known simply as "hibiscus", or less widely known as rose mallow. Other names include hardy hibiscus, rose of sharon, and tropical hibiscus.
+
+The genus includes both annual and perennial herbaceous plants, as well as woody shrubs and small trees. The generic name is derived from the Greek name ἰβίσκος (hibiskos) which Pedanius Dioscorides gave to Althaea officinalis (c. 40–90 AD).[4][5]
+
+Several species are widely cultivated as ornamental plants, notably Hibiscus syriacus and Hibiscus rosa-sinensis.[6]
+
+A tea made from hibiscus flowers is known by many names around the world and is served both hot and cold. The beverage is known for its red colour, tart flavour, and vitamin C content.</dd>
+         <dt><font color="red">IMAGE OF PLANT</font></dt>
+         <button>Enlarge image</button>
+         <dd><img src="hibiscus.jpg" width="100" height="100" align="middle"</dd>
+</dl>
+<button id="hide">HIDE CONTENT</button>
+ <button id="show">SHOW CONTENT</button>
+<div class="simple">
+<form action="message.html">
+<input type="number" required="1" maxlength="2" name="number" placeholder="enter the number of sapling you want to buy" id="button"><br></br>
+<input type="submit" value="BUY" id="butt">
+</form>
+</div>
+</body>
+</html>

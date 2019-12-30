@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script>
+     $(document).ready(function(){
+       $("#hide").click(function(){
+         $("dd").hide();
+       });
+       $("#show").click(function(){
+         $("dd").show();
+       });
+     });
+   </script>
+   <script>
+   $(document).ready(function(){
+     $("button").click(function(){
+       $("img").animate({
+         left: '250px',
+         height: '+=150px',
+         width: '+=150px'
+       });
+     });
+   });
+</script>
+   <title>PLANT DESCRIPTION</title>
+
+
+
+<style type="text/css" media="screen">
+
+body{
+	height: 100vh;
+	background-image: linear-gradient(grey,lightgrey,grey);
+}
+ .simple{
+
+     text-align:center;
+     margin:100px 400px;
+
+
+
+    }
+#button{
+width:250px;
+
+padding:10px;
+border-radius: 5px;
+outline:0px;
+
+
+
+}
+#butt{
+
+
+width:250px;
+
+padding:10px;
+border-radius: 5px;
+outline:0px;
+background-color:green;
+border:2px solid #01010c;
+color:white;
+font-size:18px;
+
+
+}
+       dt{margin-bottom:.5em;font-size:125%;}
+      dd{margin-bottom:1em;}
+    </style>
+</head>
+<body>
+<h1 align="center"><font color="red" >PLANT DESCRIPTION</font></h1>
+<dl id="faq">
+         <dt><font color="red">SCIENTIFIC NAME OF PLANT?</font></dt>
+         <dd>Rosa</dd>
+         <dt><font color="red">DESCRIPTION</font></dt>
+         <dd>The rose is a type of flowering shrub. Its name comes from the Latin word Rosa. The flowers of the rose grow in many different colors, from the well-known red rose or yellow roses and sometimes white or purple roses. Roses belong to the family of plants called Rosaceae. All roses were originally wild and they come from several parts of the world, North America, Europe, northwest Africa and many parts of Asia and Oceania. There are over 100 different species of roses. The wild rose species can be grown in gardens, but most garden roses are cultivars, which have been chosen by people.
+
+Over hundreds of years they have been specially bred to produce a wide variety of growing habits and a broad range of colours from dark red to white including as well yellow and a bluish/lilac colour. Many roses have a strong, pleasant scent. Most roses have prickles (incorrectly called thorns) on their stems. Rose bushes are able to tolerate a wide variety of growing conditions. The fruit of the rose is called a hip. Some roses have decorative hips.
+
+Roses are widely used across the world as symbols of love, sympathy or sorrow.
+
+Rose is widely used as a girl's name. Also, roses protect themselves from other predators trying to hunt them with thorns, a widely known defense system.</dd>
+         <dt><font color="red">IMAGE OF PLANT</font></dt>
+         <button>Enlarge image</button>
+         <dd><img src="rose.jpg" width="100" height="100" align="middle"</dd>
+</dl>
+<button id="hide">HIDE CONTENT</button>
+ <button id="show">SHOW CONTENT</button>
+<div class="simple">
+<form action="message.html">
+<input type="number" required="1" maxlength="2" name="number" placeholder="enter the number of sapling you want to buy" id="button"><br></br>
+<input type="submit" value="BUY" id="butt">
+</form>
+</div>
+</body>
+</html>
