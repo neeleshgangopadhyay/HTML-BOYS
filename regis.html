@@ -15,12 +15,12 @@
 <div class="simple">
 <h2><font color="red"> REGISTRATION FORM</font></h2>
     <form name="RegForm" action="a.html" onsubmit="return validation()" method="post"  id="registration">
-      <input type="text" required="" pattern="[A-Za-z]"pattern="[A-Za-z]" title="Enter only text and also must contain min of 1 and max of 20"  name="fname" id="button" class="form-control" placeholder="Enter your  name ">
+      <input type="text" required="" pattern="[A-Za-z].{1,}"pattern="[A-Za-z]" title="Enter only text and also must contain min of 1 and max of 20"  name="fname" id="button" class="form-control" placeholder="Enter your  name ">
 	  <br>
       <span id="name">  </span>
 	  <br>
       <input type="text" name="Username" required="2" maxlength="20" id="butto" class="form-control" placeholder="Enter your  username "><br>
-   
+
       <br>
 	  <span id="username">  </span>
 	  <br>
@@ -31,7 +31,7 @@
       <select><option>+91</option><option>+92</option><option>+93</option><option>+94</option><option><option>+95</option></select>
        <input type="number"  required="10" maxlength="10" name="number" placeholder="enter your phonenumber" id="phone"><br>
       <span id="mnumber"></span>
-	   
+
        <br>
 	   <span id="name"></span>
        <input type="submit" value="register" id="butt">
